@@ -25,7 +25,7 @@ const ball = {
 	x : cvs.width/2,
 	y : cvs.height/2,
 	radius : 10,
-	speed : 5,
+	speed : 1,
 	velocityX : 5,
 	velocityY : 5,
 	color : "white"
@@ -106,7 +106,7 @@ function resetBall() {
 	ball.x = cvs.width/2;
 	ball.y = cvs.height/2;
 
-	ball.speed= 5;
+	ball.speed= 1;
 	ball.velocityX = -ball.velocityX;
 }
 
