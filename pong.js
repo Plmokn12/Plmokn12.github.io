@@ -25,9 +25,9 @@ const ball = {
 	x : cvs.width/2,
 	y : cvs.height/2,
 	radius : 10,
-	speed : 0.1,
-	velocityX : 5,
-	velocityY : 5,
+	speed : 1,
+	velocityX : 1,
+	velocityY : 1,
 	color : "white"
 }
 
@@ -135,7 +135,7 @@ function update() {
 		ball.velocityX = direction * ball.speed * Math.cos(angleRad);
 		ball.velocityY =             ball.speed * Math.sin(angleRad)
 
-		while (ball.speed < 10) {
+		if (ball.speed < 10) {
 			ball.speed += 0.25;
 		}
 		
