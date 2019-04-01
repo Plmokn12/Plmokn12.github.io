@@ -28,7 +28,7 @@ const ball = {
 	speed : 1,
 	velocityX : 1,
 	velocityY : 1,
-	color : "white"
+	color : "red"
 }
 
 const net = {
